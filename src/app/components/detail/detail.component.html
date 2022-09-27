@@ -1,0 +1,14 @@
+<div class="detail">
+  <app-user-form
+    #form
+    [user]="user">
+  </app-user-form>
+
+  <div class="detail__buttons">
+    <button class="btn primary" *ngIf="!isDetail" (click)="create()">Crear</button>
+    <ng-container *ngIf="isDetail">
+      <button class="btn warn" (click)="delete()">Eliminar</button>
+      <button class="btn secondary" (click)="update()">Editar</button>
+    </ng-container>
+  </div>
+</div>

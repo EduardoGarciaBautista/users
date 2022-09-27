@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  display: grid;
+  padding: 3rem;
+  grid-template-areas: "header header" "list detail";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  &__header {
+    grid-area: header;
+    text-align: center;
+    border-bottom: 1px solid $bordered-color;
+  }
+
+  &__list {
+    grid-area: list;
+  }
+
+  &__detail {
+    grid-area: detail;
+  }
+}

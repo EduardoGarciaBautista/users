@@ -1,0 +1,8 @@
+<button class="btn primary mb-1"
+        [routerLink]="'nuevo'">
+  Crear nuevo usuario
+</button>
+<app-user-list-item
+  [user]="user"
+  *ngFor="let user of userList">
+</app-user-list-item>

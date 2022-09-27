@@ -1,0 +1,9 @@
+<ng-container *ngIf="user">
+  <li class="list-item" (click)="detail()">
+    <p> <b>Nombre:</b> {{user.name}}</p>
+    <p><b>E-Mail:</b> {{user.email}}</p>
+    <p>
+      <b>Descripción:</b> {{user.description}}
+    </p>
+  </li>
+</ng-container>

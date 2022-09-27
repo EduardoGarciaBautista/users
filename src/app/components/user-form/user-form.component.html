@@ -1,0 +1,16 @@
+<ng-container *ngIf="form">
+  <form [formGroup]="form">
+    <div class="control">
+      <label for="name">Nombre</label>
+      <input class="cs-input" type="text" id="name" formControlName="name">
+    </div>
+    <div class="control">
+      <label for="email">Correo</label>
+      <input class="cs-input" type="text" id="email" formControlName="email">
+    </div>
+    <div class="control">
+      <label for="desc">Decripcción</label>
+      <textarea class="cs-input" id="desc" rows="5" formControlName="description"></textarea>
+    </div>
+  </form>
+</ng-container>

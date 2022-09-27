@@ -1,0 +1,12 @@
+.list-item {
+  padding: 1rem;
+  border: 1px solid $bordered-color;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  transition-duration: 300ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
